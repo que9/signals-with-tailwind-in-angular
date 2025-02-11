@@ -1,0 +1,48 @@
+<div class="mx-auto p-5 max-w-5xl flex flex-col md:flex-row transition-all gap-x-7">
+  <div class="md:w-[40%] flex flex-col gap-y-6 shadow-lg p-5 rounded-lg border border-gray-100">
+    <h3 class="text-2xl font-semibold">Vehicles</h3>
+    <div>
+      <label>
+        Filter By:
+        <input type="text" placeholder="Starwar vehicle name..." class="border px-3 py-2 rounded-md" />
+      </label>
+    </div>
+
+    <div>
+      <ul class="rounded-lg border border-gray-200 cursor-pointer">
+        @for (vehicle of vehicles(); track $index) {
+          <li class="p-2 even:bg-gray-100 border-l-4 border-l-transparent hover:border-l-4 hover:border-l-sky-500">{{vehicle.name}}</li>
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div class="md:w-[60%] flex flex-col gap-y-6 shadow-lg p-5 rounded-lg border border-gray-100">
+    <div class="flex justify-between">
+      <h3 class="text-2xl font-semibold">Details</h3>
+      <app-primary-button label="Add to cart"></app-primary-button>
+    </div>
+
+    <div>
+      <ul class="flex flex-col gap-y-4">
+        <li class="flex">
+          <div class="w-[40%]">Name</div>
+          <div class="w-[60%]">Name of the vehicle.</div>
+        </li>
+        <li class="flex">
+          <div class="w-[40%]">Crew</div>
+          <div class="w-[60%]">5</div>
+        </li>
+        <li class="flex">
+          <div class="w-[40%]">Films</div>
+          <div class="w-[60%]">
+            <ul class="rounded-lg border border-gray-200 cursor-pointer">
+              <li class="p-2 even:bg-gray-50 hover:bg-gray-100">Sand Crawler</li>
+              <li class="p-2 even:bg-gray-50 hover:bg-gray-100">Sand Crawler</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

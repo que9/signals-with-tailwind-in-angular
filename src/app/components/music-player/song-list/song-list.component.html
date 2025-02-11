@@ -1,0 +1,17 @@
+<ul>
+  @for (song of [1,2,3,4]; track $index) {
+    <li class="p-2 odd:bg-gray-100 hover:bg-gray-200 flex justify-between items-center">
+      <span class="grow">
+        <img
+          class="rounded-md border size-16"
+          src="tlp_hero_album-covers.jpg" />
+      </span>
+      <span class="grow ">{{$index}}. Once Dance</span>
+      <span class="grow">Album / author</span>
+      <span class="grow">4:50</span>
+      <span class="grow justify-self-start">
+        <button class="border-2 border-sky-500 px-3 py-0.5 rounded-2xl text-sm font-medium hover:bg-sky-500 hover:text-white active:bg-sky-600">CATTYCLOUD SYNC</button>
+      </span>
+    </li>
+  }
+</ul>

@@ -1,0 +1,46 @@
+<div class="flex flex-col h-screen">
+  <section class= "grow flex">
+    <aside class="flex flex-col bg-gray-200">
+      <ul class="flex flex-col cursor-pointer">
+      @for (icon of icons(); track $index) {
+        <li class="px-4 py-6 hover:bg-gray-100 hover:text-black text-gray-700">
+          <i class="{{icon}} text-xl"></i>
+        </li>
+      }
+      </ul>
+    </aside>
+
+    <article class="flex flex-col w-full">
+      <div class="p-12 bg-slate-700 text-white">
+        <app-music-head></app-music-head>
+      </div>
+      <div>
+        <app-song-list></app-song-list>
+      </div>
+    </article>
+  </section>
+
+  <footer class="py-2 px-4 flex justify-between bg-sky-600 text-white">
+    <div class="flex gap-x-4 items-center">
+      <div class="size-16">
+        <img
+        class="rounded-md border shadow-lg shadow-slate-700" src="Lamberghini-Cover-Song-Punjabi-2019-20190401160344-500x500.jpg" />
+      </div>
+      <div>
+        <div>If its not love</div>
+        <div class="text-slate-300">Author</div>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <ul class="flex gap-x-8 cursor-pointer">
+        <li><i class="fa-solid fa-forward hover:text-gray-300"></i></li>
+        <li><i class="fa-solid fa-play hover:text-gray-300"></i></li>
+        <li><i class="fa-solid fa-stop hover:text-gray-300"></i></li>
+        <li><i class="fa-solid fa-backward hover:text-gray-300"></i></li>
+        <li><i class="fa-solid fa-pause hover:text-gray-300"></i></li>
+        <li><i class="fa-solid fa-arrows-rotate hover:text-gray-300"></i></li>
+        <li><i class="fa-solid fa-shuffle hover:text-gray-300"></i></li>
+      </ul>
+    </div>
+  </footer>
+</div>

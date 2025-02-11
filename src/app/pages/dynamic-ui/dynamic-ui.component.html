@@ -1,0 +1,47 @@
+<div class="mx-auto max-w-5xl p-10">
+  <h3 class="text-6xl text-sky-900">Dynamic UI with Signals</h3>
+  <!-- <div>{{counter() | json}}</div> -->
+
+  <div class="grid grid-cols-2 lg:grid-cols-3 border rounded-lg mt-10">
+    <div class="p-5">
+      <img class="max-w-64" src="/angular-19.png" alt="Angular" />
+    </div>
+
+    <div class="text-9xl font-semibold p-5 text-center text-sky-700">{{tick()}}</div>
+
+    <div class="gap-1 p-5 flex flex-col gap-y-3">
+      <app-primary-button (btnClicked)="start()" label="START"></app-primary-button>
+      <app-primary-button (btnClicked)="stop()"  label="STOP"></app-primary-button>
+      <app-primary-button (btnClicked)="reset()" label="RESET"></app-primary-button>
+    </div>
+
+
+    <div class="p-5 flex flex-col gap-y-3 justify-center">
+      <input type="number" #adhocCount value="1" class="border border-sky-500 p-2 rounded-lg w-full " />
+      <app-primary-button (btnClicked)="updateAdhoc(adhocCount.value)" label="Set Count"></app-primary-button>
+    </div>
+
+    <div class="p-5 flex flex-col gap-y-3">
+      <div>
+        <label>Increment By :
+        <input
+          (change)="differenceChange($event)" [value]="difference()" type="number" class="border border-sky-500 p-2 rounded-lg w-full" />
+      </label>
+      </div>
+      <div>
+        <label>
+        Tick speed (ms)):
+        <input type="number" value="{{speed()}}" class="border border-sky-500 p-2 rounded-lg w-full" />
+      </label>
+      </div>
+    </div>
+
+    <div class="p-5 flex flex-col gap-y-3 justify-center">
+      <app-primary-button (btnClicked)="goUp()" label="Count Up"></app-primary-button>
+      <app-primary-button (btnClicked)="goDown()" label="Count Down"></app-primary-button>
+    </div>
+
+  </div>
+
+
+</div>
