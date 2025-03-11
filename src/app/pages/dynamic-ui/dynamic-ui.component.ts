@@ -1,7 +1,6 @@
 import { Component, computed, signal, effect, untracked, ElementRef } from '@angular/core';
 import { PrimaryButtonComponent } from "../../components/primary-button/primary-button.component";
 import { FormsModule } from '@angular/forms';
-import { JsonPipe } from '@angular/common';
 
 
 
@@ -15,7 +14,7 @@ const  DEFAULT_COUNTER = {
 
 @Component({
   selector    : 'app-dynamic-ui',
-  imports     : [PrimaryButtonComponent, FormsModule, JsonPipe],
+  imports     : [PrimaryButtonComponent, FormsModule],
   templateUrl : './dynamic-ui.component.html',
   styleUrl    : './dynamic-ui.component.scss'
 })

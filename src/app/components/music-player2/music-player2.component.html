@@ -1,0 +1,79 @@
+<div id="music-player">
+    <section>
+        <nav>
+            <ul class="controls">
+                @for (icon of icons(); track $index) {
+                    <li >
+                    <i class="{{icon}}"></i>
+                    </li>
+                }
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                <div class="thumbnail">
+                    <img  class="thumbnail" src="Lamberghini-Cover-Song-Punjabi-2019-20190401160344-500x500.jpg" />
+                </div>
+                <section>
+                    <div>
+                        <h2>CattyBoard Top 100 Single Charts (11.06.36)</h2>
+                        <div>
+                            <p>Unknown Artist</p>
+                            <p>2016 . Charts . 100 songs</p>
+                        </div>
+                    </div>
+
+                    <ul class="controls">
+                        <li><i class="fa fa-play"></i> <span>Play all</span></li>
+                        <li><i class="fa fa-plus"></i> <span>Add to</span></li>
+                        <li><i class="fa fa-ellipsis-h"></i> <span>More</span></li>
+                    </ul>
+                </section>
+            </aside>  
+            
+            <article>
+                <ul>
+                    @for (song of [1,2,3,4]; track $index) {
+                        <li>
+                            <span class="thumbnail">
+                                <img class="thumbnail" src="tlp_hero_album-covers.jpg" />
+                            </span>
+                            <span>{{$index}}. Once Dance</span>
+                            <span>Album / author</span>
+                            <span>4:50</span>
+                            <span>
+                                <button>CATTYCLOUD SYNC</button>
+                            </span>
+                        </li>
+                    }
+                </ul>
+            </article>
+
+        </main>
+    </section>
+
+    <footer>
+        <div class="bottom-thumnail">
+            <div class="thumb-container">
+                <img 
+            class="thumbnail"
+            src="Lamberghini-Cover-Song-Punjabi-2019-20190401160344-500x500.jpg" />
+            </div>
+            
+            <div>
+                <div>If its not love</div>
+                <div>Author</div>
+            </div>
+
+        </div>
+        
+        <ul class="controls">
+            <li><i class="fa-solid fa-backward"></i></li>
+            <li><i class="fa-solid fa-play"></i></li>
+            <li><i class="fa-solid fa-forward"></i></li>
+            <li><i class="fa-solid fa-arrows-rotate"></i></li>
+            <li><i class="fa-solid fa-shuffle"></i></li>
+        </ul>
+    </footer>
+
+</div>

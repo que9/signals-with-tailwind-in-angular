@@ -1,4 +1,20 @@
-# Ecom
+# Signals in Angular 
+
+## Home Screener UI
+![Home Screen](/public/ui/home.png)
+
+## Extreme Dynamic UI in Signals
+![Dynamic UI](/public/ui/dynamic-ui-with-signals.png)
+
+## Computed Signals
+![Computed Signals](/public/ui/computed-props.png)
+
+## Vehicle List
+![Vehicle List](/public/ui/vehicle-list.png)
+
+## Music Player UI in Tailwind
+![Music Player](/public/ui/music-player-ui.png)
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
 

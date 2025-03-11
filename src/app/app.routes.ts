@@ -9,6 +9,8 @@ import { DynamicUiComponent } from './pages/dynamic-ui/dynamic-ui.component';
 import { MusicPlayerComponent } from './pages/music-player/music-player.component';
 import { StarwarHomeComponent } from './components/starwar-home/starwar-home.component';
 import { VehicleListComponent } from './components/vehicle-list/vehicle-list.component';
+import { MusicPlayer2Component } from './components/music-player2/music-player2.component';
+
 
 export const routes: Routes = [
   {
@@ -25,4 +27,5 @@ export const routes: Routes = [
     ]
   },
   { path: 'music-player', component: MusicPlayerComponent },
+  { path: 'music-player2', component: MusicPlayer2Component },
 ];
